@@ -5,6 +5,11 @@
     src: url(../fonts/PaytoneOne-Regular.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Asap Regular';
+    src: url(../fonts/AsapCondensed-Regular.ttf) format('truetype');
+}
+
 /* CSS Document */
 
 * {
@@ -31,6 +36,10 @@ body {
     align-items: center;
     flex-direction: column;
     overflow-x: hidden;
+    background: url(../img/geral/Background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header {
@@ -38,10 +47,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(../img/geral/Background.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     min-height: 100vh;
     width: 100vw;
     position: relative;
@@ -49,6 +54,19 @@ body {
 
 .green {
     color: #22DE22;
+}
+
+.gray{
+    color: #ffffffba;
+}
+
+.font-asap{
+    font-family: 'Asap Regular';
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
 }
 
 .section-1 {
@@ -72,15 +90,72 @@ body {
 
 .section-3{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 2em;
     width: 90%;
+    gap: 3em;
 }
 
 .img-main {
     max-height: 40em;
 }
 
+.sec-3-item-img{
+    max-height: 15em;
+}
+
+.section-3-itens{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+}
+
+.title-main-sec-3{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.section-3-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-3-item h1,p{
+    text-align: center;
+}
+
+/*  */
+#tabela-cripto{
+    width: 90vw;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-header{
+    border-bottom: 1px solid #22DE22;
+}
+
+td{
+    color: #fff;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.cripto-logo{
+    height: 0.5em;
+}
+
+th{
+    color: #fff;
+    padding: 1em;
+    font-size: 1em;
+}
+
+/*  */
 .title-main {
     max-width: 30%;
     font-size: 3em;
@@ -99,23 +174,25 @@ body {
     cursor: pointer;
 }
 
-#vizualizar{
+#vizualizar {
+    margin-top: 2em;
+    display: block;
     background-color: #22DE22;
     border: none;
     padding: 0.5em 1em;
     border-radius: 0.5em;
-    font-size: 1.2em;
+    font-size: 0.5em;
     color: #ffffff;
-    transition: transform 0.1s ease-in-out, box-shadow 0.05s ease-in-out;
+    transition: background-color 0.1s ease-in-out, box-shadow 0.05s ease-in-out, transform 0.05s ease-in-out;
     box-shadow: 2px 5px 1px #237E23;
 }
 
-#vizualizar:hover{
-    transform: scale(1.02);
+#vizualizar:hover {
     cursor: pointer;
+    background-color: #22de22c6;
 }
 
-#vizualizar:active{
+#vizualizar:active {
     box-shadow: none;
     transform: translateY(0.2em);
 }
@@ -171,9 +248,28 @@ body {
         max-height: 20em;
     }
 
+    .sec-3-item-img{
+        max-height: 15em;
+    }
+    
+    .section-3-itens{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+    
+    .title-main-sec-3{
+        text-align: center;
+        font-size: 2em;
+    }
+
     .title-main {
         max-width: 45%;
         font-size: 2em;
+    }
+
+    .some{
+        display: none;
     }
 
     #menu-button {
@@ -253,6 +349,10 @@ body {
         font-size: 1.5em;
     }
 
+    .sec-3-item-img{
+        max-height: 10em;
+    }
+
     .section-2 {
         gap: 1em;
     }
@@ -282,5 +382,3 @@ body {
         margin-top: 10em;
     }
 }
-
-
