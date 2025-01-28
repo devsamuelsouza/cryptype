@@ -1,0 +1,4 @@
+GET https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
+Accept: application/json
+Accept-Encoding: deflate, gzip
+X-CMC_PRO_API_KEY: "YOR API KEY"
