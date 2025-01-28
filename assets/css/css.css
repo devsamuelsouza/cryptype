@@ -70,6 +70,13 @@ body {
     margin: 0 2em;
 }
 
+.section-3{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+}
+
 .img-main {
     max-height: 40em;
 }
@@ -88,6 +95,31 @@ body {
     gap: 0.5em;
 }
 
+.logo-text:hover {
+    cursor: pointer;
+}
+
+#vizualizar{
+    background-color: #22DE22;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    color: #ffffff;
+    transition: transform 0.1s ease-in-out, box-shadow 0.05s ease-in-out;
+    box-shadow: 2px 5px 1px #237E23;
+}
+
+#vizualizar:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#vizualizar:active{
+    box-shadow: none;
+    transform: translateY(0.2em);
+}
+
 .menu {
     display: flex;
     gap: 2em;
@@ -103,6 +135,7 @@ body {
 
 .menu-item:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 #section-1-phone {
