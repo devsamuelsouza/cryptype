@@ -279,6 +279,7 @@ main{
     width: 15em;
     border: 1px solid #22DE22;
     margin-right: 2em;
+    color: #fff;
 }
 
 #email:focus {
