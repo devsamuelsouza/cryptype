@@ -59,7 +59,18 @@ Veja a aplicação no ar clicando [aqui](https://devsamuelsouza.github.io/crypty
 
 ---
 
-<img src="./assets/img/geral/Ok.png" style="height: 20em">
+<table>
+  <tr>
+    <td align="left">
+      <a href="https://devsamuelsouza.github.io/cryptype/">
+        <img src="./assets/img/geral/Ok.png" width="400px;" align/><br>
+        <sub>
+        <b>Cotação de Criptomoedas!</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
