@@ -116,7 +116,7 @@ fetch('https://api-crypto-q3f7.onrender.com/cotacao/coins')
             cripto.innerHTML =
                 `          
                     <td>${i + 1}</td>         
-                    <td class="logo-name"><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/${id}.png" alt="${name} class="cripto-logo" style="width: 2em; height: 2em; margin-right: 0.5em;"> <span class="green">${name}</span> <span class="gray font-asap" style="margin-left: 0.5em">${symbol}</span></td>
+                    <td class="logo-name"><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/${id}.png" alt="${name} class="cripto-logo" style="width: 2em; height: 2em; margin-right: 0.5em;"> <span style="font-family: 'Asap Regular">${name}</span> <span class="gray font-asap" style="margin-left: 0.5em">${symbol}</span></td>
                     <td>${cotacao}</td>
                     ${change24h}
                     ${change7d}
