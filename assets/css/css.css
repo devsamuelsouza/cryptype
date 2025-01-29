@@ -51,6 +51,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 .green {
@@ -429,6 +430,10 @@ main{
     .title-main {
         max-width: 45%;
         font-size: 1.5em;
+    }
+
+    .cripto-logo {
+        height: 0.3em;
     }
 
     .sec-3-item-img {
