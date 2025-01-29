@@ -36,10 +36,7 @@ body {
     align-items: center;
     flex-direction: column;
     overflow-x: hidden;
-    background: url(../img/geral/Background.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #000000;
 }
 
 .header {
@@ -50,21 +47,29 @@ body {
     min-height: 100vh;
     width: 100vw;
     position: relative;
+    background: url(../img/geral/Background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .green {
     color: #22DE22;
 }
 
-.gray{
+.gray {
     color: #ffffffba;
 }
 
-.font-asap{
+.font-asap {
     font-family: 'Asap Regular';
 }
 
-.logo-name{
+.red{
+    color: #ff0000;
+}
+
+.logo-name {
     display: flex;
     align-items: center;
 }
@@ -88,7 +93,7 @@ body {
     margin: 0 2em;
 }
 
-.section-3{
+.section-3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,54 +107,55 @@ body {
     max-height: 40em;
 }
 
-.sec-3-item-img{
+.sec-3-item-img {
     max-height: 15em;
 }
 
-.section-3-itens{
+.section-3-itens {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     width: 100%;
 }
 
-.title-main-sec-3{
+.title-main-sec-3 {
     text-align: center;
     font-size: 2.5em;
 }
 
-.section-3-item{
+.section-3-item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.section-3-item h1,p{
+.section-3-item h1,
+p {
     text-align: center;
 }
 
 /*  */
-#tabela-cripto{
+#tabela-cripto {
     width: 90vw;
     border-collapse: collapse;
     text-align: left;
 }
 
-.table-header{
+.table-header {
     border-bottom: 1px solid #22DE22;
 }
 
-td{
+td {
     color: #fff;
     padding: 1em;
     font-size: 1em;
 }
 
-.cripto-logo{
+.cripto-logo {
     height: 0.5em;
 }
 
-th{
+th {
     color: #fff;
     padding: 1em;
     font-size: 1em;
@@ -159,6 +165,19 @@ th{
 .title-main {
     max-width: 30%;
     font-size: 3em;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background: url(../img/geral/Background.webp);
+    background-position: center;
+    background-repeat: repeat;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }
 
 .logo-icon {
@@ -211,12 +230,75 @@ th{
 }
 
 .menu-item:hover {
-    transform: scale(1.05);
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 #section-1-phone {
     display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    background-color: #000000;
+    margin-top: 5em;
+}
+
+.footer-social {
+    display: flex;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.inscreva-se{
+    margin: 1em 0;
+}
+
+#email {
+    background-color: #00000000;
+    padding: 0.2em 1em;
+    width: 15em;
+    border: 1px solid #22DE22;
+    margin-right: 2em;
+}
+
+#email:focus {
+    outline: none;
+    color: #fff;
+    font-family: 'Asap Regular';
+}
+
+#submit-email{
+    border: 1px solid #22DE22;
+    background-color: #00000000;
+    padding: 0.2em 1em;
+    color: #fff;
+    transition: background-color 0.1s ease-in-out, box-shadow 0.05s ease-in-out, transform 0.05s ease-in-out;
+}
+
+#submit-email:hover{
+    cursor: pointer;
+    background-color: #22de22c6;
+}
+
+.socical {
+    height: 1.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socical:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.copirught{
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0 0 1em 0;
 }
 
 @media screen and (max-width: 1500px) {
@@ -248,17 +330,17 @@ th{
         max-height: 20em;
     }
 
-    .sec-3-item-img{
+    .sec-3-item-img {
         max-height: 15em;
     }
-    
-    .section-3-itens{
+
+    .section-3-itens {
         display: grid;
         grid-template-columns: 50% 50%;
         width: 100%;
     }
-    
-    .title-main-sec-3{
+
+    .title-main-sec-3 {
         text-align: center;
         font-size: 2em;
     }
@@ -268,7 +350,7 @@ th{
         font-size: 2em;
     }
 
-    .some{
+    .some {
         display: none;
     }
 
@@ -349,7 +431,7 @@ th{
         font-size: 1.5em;
     }
 
-    .sec-3-item-img{
+    .sec-3-item-img {
         max-height: 10em;
     }
 
