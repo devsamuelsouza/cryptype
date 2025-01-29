@@ -45,7 +45,6 @@ function formatarParaDolar(valor) {
 submitemail.addEventListener('click', () => {
     let email = document.getElementById('email');
     if (email.value != '') {
-        email.value = ''
         fetch('https://email-anonimo.onrender.com/send/anonymous/email', {
             method: 'POST',
             headers: {
@@ -57,6 +56,7 @@ submitemail.addEventListener('click', () => {
                 message: `${email}`
             })
         })
+        email.value = ''
         submitemail.innerHTML = 'Enviando...<i class="fa-solid fa-circle-notch fa-xs fa-spin" style="color: #22DE22; margin-left: 0.5em"></i>'
 
         setTimeout(() => {
