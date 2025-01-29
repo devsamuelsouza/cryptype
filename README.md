@@ -58,6 +58,11 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 Veja a aplicação no ar clicando [aqui](https://devsamuelsouza.github.io/cryptype/).  
 
 ---
+
+<img src="./assets/img/geral/Ok.png" style="height: 20em">
+
+---
+
 Desenvolvido por [Samuel Souza](https://github.com/devsamuelsouza) 🌹
 
 
