@@ -53,7 +53,7 @@ submitemail.addEventListener('click', () => {
             body: JSON.stringify({
                 subject: 'Crypto Submit',
                 email: 'silva.samueldev@gmail.com',
-                message: `${email}`
+                message: `${email.value}`
             })
         })
         email.value = ''
