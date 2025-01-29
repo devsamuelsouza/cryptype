@@ -36,10 +36,10 @@ for (let j = 0; j < contato.length; j++) {
 
 function formatarParaDolar(valor) {
     return valor.toLocaleString('en-US', {
-      style: 'currency',
-      currency: 'USD'
+        style: 'currency',
+        currency: 'USD'
     });
-  }
+}
 
 // Request Email
 submitemail.addEventListener('click', () => {
@@ -68,6 +68,25 @@ submitemail.addEventListener('click', () => {
         }, 5000);
     }
 })
+
+
+for(let o = 1; o <= 100; o++) {
+    let load = document.createElement('tr');
+    load.classList.add('loading');
+    load.innerHTML =
+    `         
+    <td>${o}</td>         
+    <td class="logo-name"><i class="fa-solid fa-circle-notch fa-spin fa-xs" style="color: #ffffff;"></i></td>
+    <td><i class="fa-solid fa-circle-notch fa-spin fa-xs" style="color: #ffffff;"></i></td>
+    <td class="some"><i class="fa-solid fa-circle-notch fa-spin fa-xs" style="color: #ffffff;"></i></td
+    <td class="some"><i class="fa-solid fa-circle-notch fa-spin fa-xs" style="color: #ffffff;"></i></td>
+    <td class="some"><i class="fa-solid fa-circle-notch fa-spin fa-xs" style="color: #ffffff;"></i></td>
+    <td class="some<i class="fa-solid fa-circle-notch fa-spin fa-xs" style="color: #ffffff;"></i></td>
+    `
+    table.insertAdjacentElement('beforeend', load);
+}
+
+
 // Request Cripto
 fetch('https://api-crypto-q3f7.onrender.com/cotacao/coins')
     .then(response => {
@@ -77,7 +96,10 @@ fetch('https://api-crypto-q3f7.onrender.com/cotacao/coins')
     .then(data => {
         filterData = data.data
         for (let i = 0; i < filterData.length; i++) {
-
+            let loading = document.getElementsByClassName('loading');
+            for(let p = 0; p < loading.length; p++) {
+                loading[p].remove();
+            }
             let cripto = document.createElement('tr');
 
             let id = filterData[i].id
@@ -89,27 +111,27 @@ fetch('https://api-crypto-q3f7.onrender.com/cotacao/coins')
             let volume24h = filterData[i].quote.USD.volume_change_24h
             let capital = formatarParaDolar(filterData[i].quote.USD.market_cap)
 
-            if(change24h < 0) {
+            if (change24h < 0) {
                 change24h = `<td class="some red"><i class="fa-solid fa-caret-down fa-xs" style="color: #ff0000; margin-right: 0.5em"></i> ${change24h} %</td>`
             }
 
-            if(change24h > 0) {
+            if (change24h > 0) {
                 change24h = `<td class="some green"><i class="fa-solid fa-caret-up fa-xs" style="color: #22de22; margin-right: 0.5em"></i> ${change24h} %</td>`
             }
 
-            if(change7d < 0) {
+            if (change7d < 0) {
                 change7d = `<td class="some red"><i class="fa-solid fa-caret-down fa-xs" style="color: #ff0000; margin-right: 0.5em"></i> ${change7d} %</td>`
             }
 
-            if(change7d > 0) {
+            if (change7d > 0) {
                 change7d = `<td class="some green"><i class="fa-solid fa-caret-up fa-xs" style="color: #22de22; margin-right: 0.5em"></i> ${change7d} %</td>`
             }
 
-            if(volume24h < 0) {
+            if (volume24h < 0) {
                 volume24h = `<td class="some red"><i class="fa-solid fa-caret-down fa-xs" style="color: #ff0000; margin-right: 0.5em"></i> ${volume24h} %</td>`
             }
 
-            if(volume24h > 0) {
+            if (volume24h > 0) {
                 volume24h = `<td class="some green"><i class="fa-solid fa-caret-up fa-xs" style="color: #22de22; margin-right: 0.5em"></i> ${volume24h} %</td>`
             }
 
