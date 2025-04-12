@@ -4,6 +4,21 @@ Uma aplicação front-end com o intuito de mostrar a cotação das criptomoedas 
 
 ---
 
+<table>
+  <tr>
+    <td align="left">
+      <a href="https://devsamuelsouza.github.io/cryptype/">
+        <img src="./assets/img/geral/Ok.png" width="400px;" align/><br>
+        <sub>
+        <b>Cotação de Criptomoedas!</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
 ### 📋 Pré-requisitos
 
 - Para rodar esse projeto de forma local você deverá possuir o [Git](https://git-scm.com/downloads) instalado em seu computador.
@@ -56,21 +71,6 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 ## **📡 Online**  
 Veja a aplicação no ar clicando [aqui](https://devsamuelsouza.github.io/cryptype/).  
-
----
-
-<table>
-  <tr>
-    <td align="left">
-      <a href="https://devsamuelsouza.github.io/cryptype/">
-        <img src="./assets/img/geral/Ok.png" width="400px;" align/><br>
-        <sub>
-        <b>Cotação de Criptomoedas!</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
 
 ---
 
